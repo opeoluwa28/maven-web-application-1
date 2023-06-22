@@ -10,10 +10,10 @@
 </head>
 <body>
 <h1 align="center">Welcome to Lexus Web application United State Of America Project.</h1>
-<h1 align="center">We are developing and supporting quality Software Solutions to millions of clients globally.
-	           We are raising millionaires in IT automation.
+<h1 align="center">We are developing and supporting quality Software Solutions at Searise Technology, We are trainning Engineers to become millions. We have clients globally.
+	           We are raising millionaires in IT automation. Our Devops Engineer are Bunmi, Ayomide, Yinka, and Biyi
 	We offer Training for DevOps with Linux and Cloud equipping IT Engineers for best performance.
-	Our next class will start on Agust 15, 2023. </h1>
+	Our next class will start on August 15, 2023. </h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
