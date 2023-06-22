@@ -13,8 +13,8 @@
 	<description>Maven Web Project for Java Project</description>
 
 	<organization>
-		<name>Landmark Technologies</name>
-		<url>http://landmarktechnologies.com/</url>
+		<name>Searise Technologies</name>
+		<url>http://searisetech.com/</url>
 	</organization>
 
 	<properties>
@@ -94,13 +94,13 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
+	      <name>Searise Technologies Releases Nexus Repository</name>
 	      <url>http://44.210.106.113:8081/repository/LexusProject-Releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <name>Searise Technologies Snapshot Nexus Repository </name>
 	      <url>http://44.210.106.113:8081/repository/LexusProject-Snapshot/</url>
 	    </snapshotRepository>
 	    
