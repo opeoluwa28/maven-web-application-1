@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>LandmarkTechnologies- Home Page</title>
-<link href="images/mylandmarklogo.png" rel="icon">
+<title>seariseTechnologies- Home Page</title>
+<link href="images/Seariselogo.png" rel="icon">
 </head>
 </head>
 <body>
@@ -32,23 +32,23 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklogo.png" alt="" width="150">
+		<img src="images/seariselogo.png" alt="" width="150">
 	</span>
 	<span style="font-weight: bold;">
-                Landmark Technology, 
-		Toronto, Canada
-		+1 437 215 2483,
-		mylandmarktech@gmail.com
+               Searise Technology, 
+		Maryland, USA
+		+1 301 852 4894,
+		searisetech@gmail.com
 		<br>
-		<a href="mailto:mylandmarktech@gmail.com">Mail to Landmark Technologies</a>
+		<a href="mailto:searisech@gmail.com">Mail to Searise Technologies</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center> Landmark Technologies - Consultant, Training and Software Development</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mylandmarktech.com/">Landmark Technologies</a> </small></p>
+<p align=center> Searise Technologies - Consultant, Training and Software Development</p>
+<p align=center><small>Copyrights 2022 by <a href="http://searisetech.com/">Searise Technologies</a> </small></p>
 
 </body>
 </html>
