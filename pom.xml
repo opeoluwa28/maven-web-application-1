@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Searise Technologies Releases Nexus Repository</name>
-	      <url>http://44.210.106.113:8081/repository/LexusProject-Releases/</url>
+	      <url>http://44.197.228.68:8081/repository/LexusProject-Releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Searise Technologies Snapshot Nexus Repository </name>
-	      <url>http://44.210.106.113:8081/repository/LexusProject-Snapshot/</url>
+	      <url>http://44.197.228.68:8081/repository/LexusProject-Snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
