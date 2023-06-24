@@ -1,0 +1,66 @@
+pipeline{
+  agent {
+    label "MasterNode"
+ }
+ tools {
+   mave "maven3.9.2"
+ }
+ //options{}
+ //triggers{}
+ stages {
+   stage (1clone){
+     steps{
+         sh "echo 'cloning the lastet application version' "
+         git "https://github.com/SeariseTech/maven-web-application-1"
+         sh "echo 'latest application version available for testing and build' "
+      }
+   }
+   stage(2TestBuild){
+      steps{
+        sh "echo 'running JUnit-test-cases' "
+        sh "echo 'testing must passed to create artifacts ' "
+        sh "mvn clean package"
+      }
+   }
+   stage('3CodeQualityAnalysis') {
+    steps{
+        sh "echo setup sonarQube authentication"
+        sh "echo 'Perfoming CodeQualityAnalysis' "
+        sh "mvn sonar:sonar"   
+      }
+   }
+   stage('4UploadArtifacts') {
+    steps{
+      sh "echo configure nexus authentication"
+      //sh "mvn deploy"
+      sh "echo artifacts uploaded"
+       }
+   }
+  stage('5deploy') {
+    steps{
+      deploy adapters: [tomcat9(credentialsId: 'New-Tomcat-Credentials', path: '', url: 'http://184.73.17.188:1978/')], contextPath: null, war: 'target/*war'
+    }
+   }   
+ }
+  
+ post{
+   always{
+emailext body: '''The new software application developed by SeariseTech Engineers for Lamborghini project is successful.
+Great Job Guy!!!
+
+SeariseTech.''', recipientProviders: [buildUser(), developers(), contributor()], subject: 'Build Success', to: 'searisetech@gmail.com'
+   }
+   success{
+emailext body: '''The new software application developed by SeariseTech Engineers for Lamborghini project is successful.
+Great Job Guy!!!
+
+SeariseTech.''', recipientProviders: [buildUser(), developers(), contributor()], subject: 'Build Success', to: 'searisetech@gmail.com'
+   }
+   failure{
+mailext body: '''The new software application developed by SeariseTech Engineers for Lamborghini project is failed.
+We need more hands to get the Job done Guy!!!
+
+SeariseTech.''', recipientProviders: [buildUser(), developers(), contributor()], subject: 'Build Failed', to: 'searisetech@gmail.com'      
+   }
+ }
+} 
