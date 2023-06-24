@@ -107,7 +107,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>Lexus</finalName>
+		<finalName>Lamborghini</finalName>
 		
 		<plugins>
 			<plugin>
