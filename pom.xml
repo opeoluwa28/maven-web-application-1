@@ -6,7 +6,7 @@
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.1.1-Releases</version> 
+	<version>0.1.1-Snapshot</version> 
 	
 	<name>maven-web-application</name>
 
@@ -22,7 +22,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http:172.31.94.238:9000/</sonar.host.url>
+		<sonar.host.url>http:172.31.81.54:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -95,19 +95,19 @@
 	    <repository>
 	     <id>nexus</id>
 	      <name>Searise Technologies Releases Nexus Repository</name>
-              <url>http://18.215.160.211:8181/searisetech/repository/Tesla-Releases-Project/</url> 
+              <url>http://34.227.17.237:8181/ope/repository/Tesla-releases/</url> 
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Searise Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.215.160.211:8181/searisetech/repository/Tesla-Snapshot-Project/</url>
+	      <url>http://34.227.17.237:8181/ope/repository/Tesla-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
 	
 	<build>
-		<finalName>Lamboghini</finalName>
+		<finalName>tesla2</finalName>
 		
 		<plugins>
 			<plugin>
