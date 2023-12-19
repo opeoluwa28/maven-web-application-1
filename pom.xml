@@ -101,7 +101,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Searise Technologies Snapshot Nexus Repository </name>
-	      <url>http://34.227.17.237:8181/ope/repository/Tesla-snapshot/</url>
+	      <url>http://52.202.113.105:8181/ope/repository/Tesla-snapshot</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
